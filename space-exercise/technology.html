@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Space tourism website</title>
+  </head>
+  <body class="technology">
+    <a class="skip-to-content" href="#main">Skip to content</a>
+    <header class="primary-header flex">
+      <div>
+        <img
+          src="./assets/shared/logo.svg"
+          alt="space tourism logo"
+          class="logo"
+        />
+      </div>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+        <span aria-expanded="false" class="sr-only">Menu</span>
+      </button>
+      <div class="line"></div>
+      <nav>
+        <ul
+          data-visible="false"
+          id="primary-navigation"
+          class="primary-navigation underline-indicators flex"
+        >
+          <li class="underline-hover">
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="index.html"
+              ><span>00</span>Home</a
+            >
+          </li>
+          <li class="underline-hover">
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="destination.html"
+              ><span aria-hidden="true">01</span>Destination</a
+            >
+          </li>
+          <li class="underline-hover">
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="crew.html"
+              ><span aria-hidden="true">02</span>Crew</a
+            >
+          </li>
+          <li class="active underline-hover">
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="technology.html"
+              ><span aria-hidden="true">03</span>Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="numbered-title technology-title">
+        <span> 03</span> Space launch 101
+      </h1>
+      <div class="container-technology grid">
+        <div class="technology-content flex">
+          <div
+            class="number-indicators flex fs-500"
+            style="flex-direction: column"
+          >
+            <div aria-selected="true"><a>1</a></div>
+            <div aria-selected="false">
+              <a>2</a>
+            </div>
+            <div aria-selected="false">
+              <a>3</a>
+            </div>
+          </div>
+          <article class="article-technology flow">
+            <header class="flow flow--space-small">
+              <h2 class="fs-400 ff-serif uppercase text-accent">
+                The terminology...
+              </h2>
+              <p class="fs-700 uppercase ff-serif">Launch vehicle</p>
+            </header>
+            <p class="text-accent">
+              A launch vehicle or carrier rocket is a rocket-propelled vehicle
+              used to carry a payload from Earth's surface to space, usually to
+              Earth orbit or beyond. Our WEB-X carrier rocket is the most
+              powerful in operation. Standing 150 metres tall, it's quite an
+              awe-inspiring sight on the launch pad!
+            </p>
+          </article>
+        </div>
+        <picture class="technology-image" id="vehicle-image">
+          <source
+            srcset="assets/technology/image-launch-vehicle-portrait.jpg"
+            type="image/webp"
+          />
+          <img src="assets/destination/image-moon.png" alt="the moon" />
+        </picture>
+      </div>
+    </main>
+    <script src="index.js"></script>
+    <script src="tabs.js"></script>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+html{
+    background-color: rgb(17 24 39);
+    color: white;
+}
+
+img{
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+    width: 95vw;
+    margin: 0 auto;
+    grid-auto-rows: 350px;
+}
+
+.card-style{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-inline: 1rem;
+}
+
+.card-title{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: -1%;
+}
+
+.card-text{
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    line-height: 1.3rem;
+}
+
+.header{
+   grid-column: 1 / -1;
+}
+
+.footer{
+    grid-column: 1 / -1;
+}
+
+.art-1{
+    grid-column: span 12;
+}
+
+.art-2{
+    grid-column: span 12;
+    grid-row: span 1;
+}
+
+.art-3{
+    grid-column: span 12;
+}
+
+.art-v{
+    grid-row: span 1;
+    grid-column: span 12;
+}
+
+.art-2-5{
+    grid-column: span 12;
+    
+}
+
+.cita{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    grid-column: span 12;
+
+
+}
+
+
+
+
+
+@media(min-width: 45rem){
+
+    .container{
+        grid-auto-rows: 18rem;
+   
+    }
+
+.art-1{
+    grid-column: span 6;
+}
+
+.art-2{
+    grid-column: span 6;
+
+}
+
+.art-2-5{
+    grid-column: span 6;
+
+
+}
+
+.art-3{
+    grid-column: span 12;
+
+} 
+
+.art-v{
+    grid-column: span 6;
+    grid-row: span 1;
+
+}
+    
+}
+
+@media (min-width: 70rem){
+    .container{
+        min-width: 70rem;
+        max-width: 80vw;
+        grid-auto-rows: 16rem;
+
+    }
+
+    .art-1{
+        grid-row:span 2;
+        grid-column: span 3;
+    }
+    
+    .art-2{
+        grid-column: span 6;
+        grid-row: span 1;
+    }
+    
+    .art-3{
+        grid-column: span 12;
+    }
+    
+    .art-v{
+        grid-row: span 3;
+        grid-column: span 6;
+    }
+    
+    .art-2-5{
+        grid-column: span 8;
+        
+    }
+
+    .cita{
+        grid-column: span 4;
+    }
+}
